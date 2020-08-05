@@ -29,7 +29,7 @@ public class Assignment {
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		WebElement element = driver.findElement(By.xpath(".//*[@id='mCSB_3_container']/p[3]"));
 		je.executeScript("arguments[0].scrollIntoView(true);",element);
-		driver.quit();
+		driver.close();
 		/*String as=element;
 		as.scrollIntoView();*/
 		
