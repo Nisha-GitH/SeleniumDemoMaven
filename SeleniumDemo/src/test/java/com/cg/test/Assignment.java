@@ -21,6 +21,7 @@ public class Assignment {
 		List<WebElement> list=driver.findElements(By.tagName("a"));
 		for(WebElement ele:list) {
 			System.out.println("Tags:"+ele.getText());
+			System.out.print("Changes made");
 			
 		}
 		driver.findElement(By.xpath("//a[text()='Shop']")).click();
