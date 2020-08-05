@@ -15,9 +15,9 @@ public class Assignment {
 		System.setProperty("webdriver.chrome.driver", "D:\\NishaKothari\\chromedriver.exe");
 		WebDriver driver =new ChromeDriver(); 
 		driver.get("http://practice.automationtesting.in/");
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		Thread.sleep(1000);
+		Thread.sleep(100);
 		List<WebElement> list=driver.findElements(By.tagName("a"));
 		for(WebElement ele:list) {
 			System.out.println("Tags:"+ele.getText());
